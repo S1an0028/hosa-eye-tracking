@@ -1,0 +1,26 @@
+[model]
+# MEYELens resolves this filename to the weights bundled in its installed package.
+path = "meye_default.pt"
+
+[inference]
+pupil_threshold = 0.5
+eye_threshold = 0.5
+threshold_step = 0.05
+use_morphology = true
+keep_biggest = true
+fill_holes = true
+morphology_kernel_size = 5
+morphology_open_iterations = 1
+morphology_close_iterations = 1
+return_probabilities = false
+compute_features = true
+use_half_precision = false
+
+[preview]
+show_pupil_mask = true
+show_eye_mask = true
+draw_area = true
+draw_centroid = true
+draw_ellipse = true
+draw_axis_points = true
+draw_text = true
